@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChainBreaker</title>
+    
+  <link rel="stylesheet" type="text/css" href="scripts/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    
+    <!--navigation-->
+    
+    <nav class="topnav" id="myTopnav">
+        <div class="topnav-padding">
+            <div class="nav-left">  
+                <a class="topnav-logo" href="index.html">ChainBreaker</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="icon" src="img/menu-bright.svg"></a></div>    
+            <div class="nav-right">
+                <a class="nav-element">
+                <button href="#" class="button button-nav button-red" id="button2">Herunterladen</button>
+                </a>
+                <div class="nav-element language-switch"> 
+                <a class="language-style" href="#Deutsch">DE</a>
+                <a style="padding-left: 8px; padding-right: 8px; color: white">|</a>
+                <a class="language-style" href="#Englisch">ENG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--script responsive navigation-->
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            }
+    }
+    </script>
+    
+    <!-- modal section-->
+    
+    <div class="modal-wrapper">
+      
+      <div class="dark-background"></div>
+      
+      <div class="content-wrapper">
+            <div class="close-button" id="close"><img src="/img/close-24px.svg">
+            </div>
+          
+            <div class="modal-text">
+                <!--Text-->
+                <h1 class="color-bright object-space">Danke für dein Interesse.</h1>
+                <h2 class="color-bright">Wähle deinen Store!</h2>
+
+                <!--download-button-->
+                <div class="CTA-wrapper">          
+                    <a style="padding-right: 5%" href="#"><img class="download-button" src="img/download_app_store_badge_DE.svg">
+                    </a>
+                    <a href="#"><img class="download-button" src="img/download_google-play-store-badge_DE.svg">
+                    </a>
+                </div>    
+            </div>
+      </div>
+   
+    </div>
+
+    <!--Imprint-->
+
+    <div class="container-fluid section-brightblue">
+        <div class="row-padding">
+            <div class="row-imprint">
+                <h1 class="object-space">Impressum</h1>
+            </div>
+            <div class="row-imprint">
+                <div class="col-6">
+                        <p>
+                            Angaben
+                </div>
+                     
+                <div class="col-6">
+                        <p class="color-bright">
+                            Verantwortlich für den Inhalt nach § 55 Abs. 2<br>
+                            RStV: Lukas Rambold, Daniela Vogel<br><br>
+                            Quelle: https://www.e-recht24.de</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <!--Disclaimer-->
+
+    <div class="container-fluid section-2" id="section-white">
+        <div class="row-padding">
+            <div class="row-imprint">        
+                <h1 class="object-space">Haftungsausschluss (Disclaimer)</h1>
+            </div>
+            
+            <div class="row-imprint">
+                    <p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+            </div>
+        </div>
+    </div>    
+    
+    <!--script modal download pop-up-->
+
+    <script> 
+            document.querySelectorAll('button').forEach(button => button.addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "flex";
+                document.body.style.overflow = 'hidden';
+        })); 
+        
+        document.getElementById("close").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        }); 
+        
+        document.querySelector(".dark-background").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        });      
+    </script>  
+    
+  <!--footer-->
+    
+    <footer>
+        
+    <div class="footer-wrapper">
+        <div class="law-wrapper">
+            <a class="footer-element" href="#">© Lukas Rambold, Daniela Vogel</a>
+        </div>
+            
+        <div class="law-wrapper">  
+            <a class="footer-element" href="/imprint.html">Impressum</a>
+            <a class="footer-element" href="/dataprivacy.html">Datenschutz</a>
+        </div>
+       
+    </div>
+    </footer>
+    
+</body>
+
+</html>

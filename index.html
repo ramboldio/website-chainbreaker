@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChainBreaker</title>
+
+  <link rel="stylesheet" type="text/css" href="scripts/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <!--navigation-->
+    
+    <nav class="topnav" id="myTopnav">
+        <div class="topnav-padding">
+            <div class="nav-left">  
+                <a class="topnav-logo" href="index.html">ChainBreaker</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="icon" src="img/menu-bright.svg"></a></div>    
+            <div class="nav-right">
+                <!--<a class="nav-element" href="#section-1">Warum&nbsp;tvshows?</a>
+                <a class="nav-element" href="#section-2">Vorteile</a>
+                <a class="nav-element" href="#section-3">Screenshots</a>-->
+                <a class="nav-element">
+                <button href="#" class="button button-nav button-red" id="button2">Herunterladen</button>
+                </a>
+                <div class="nav-element language-switch"> 
+                <a class="language-style" href="#Deutsch">DE</a>
+                <a style="padding-left: 8px; padding-right: 8px; color: white">|</a>
+                <a class="language-style" href="#Englisch">ENG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!--script responsive navigation-->
+
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+            }
+    }
+    </script>
+    
+    <!--header-->
+   
+    <div class="container-fluid">
+        
+            <div class="row-header">
+                        <!--Headline-->
+                        <div class="headline-wrapper phone-space">
+                            <h1>Breche die Infektionskette.</h1>
+                            <p>So funktioniert Chainbreaker asdfasdfasdfkjasldkfjio</p>
+                            <a href="https://www.youtube.com/watch?v=G-Nt7vGobeU">Mehr Infos hier.</a>
+                        </div>
+
+                        <!--Bild-->
+                        <div class="header-image-wrapper">
+                                <video class="header-image" src="img/prototypvideo.mov" controls>
+  Ihr Browser kann dieses Video nicht wiedergeben.<br/>
+  Dieser Film zeigt eine Demonstration des video-Elements. 
+  Sie können ihn unter <a href="#">Link-Addresse</a> abrufen.
+</video>
+                        </div>
+
+                    <!--starte jetzt-->
+                        <div class="CTA-wrapper">
+                            <button href="#" class="button button-red" id="button">Starte jetzt</button>
+                        </div>
+                   </div>
+    </div>
+    
+    <!-- modal section-->
+    
+    <div class="modal-wrapper">
+      
+      <div class="dark-background"></div>
+      
+      <div class="content-wrapper">
+            <div class="close-button" id="close"><img src="/img/close-24px.svg">
+            </div>
+          
+            <div class="modal-text">
+                <!--Text-->
+                <h1 class="color-bright object-space">Danke für dein Interesse.</h1>
+                <h2 class="color-bright">Wähle deinen Store!</h2>
+
+                <!--download-button-->
+                <div class="CTA-wrapper">          
+                    <a style="padding-right: 5%" href="https://apps.apple.com/de/app/tvshows/id1114573962"><img class="download-button" src="img/download_app_store_badge_DE.svg">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=de.swenden.tvshows"><img class="download-button" src="img/download_google-play-store-badge_DE.svg">
+                    </a>
+                </div>    
+            </div>
+      </div>
+    
+    </div>
+
+    
+    <!--section 1 -->
+
+    <div class="container-fluid section-yellow">
+        <span class="anchor" id="section-1"></span>
+        <div class="row-padding">
+            <div class="flex-textblock row">
+                <div class="small-textblock">
+                    <h1 class="text-space">Wie funktioniert ChainBreaker?</h1>
+                    <p class="object-space">Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <!--footer-->
+    
+    <footer>   
+        <div class="footer-wrapper">
+            <div class="law-wrapper">
+                <a class="footer-element" href="#">© 2020 Lukas Rambold, Daniela Vogel</a>
+            </div>
+            <div class="law-wrapper">  
+                <a class="footer-element" href="/imprint.html">Impressum</a>
+                <a class="footer-element" href="/dataprivacy.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
