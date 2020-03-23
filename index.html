@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChainBreaker</title>
 
-  <link rel="stylesheet" type="text/css" href="scripts/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
     
 </head>
@@ -18,13 +18,14 @@
         <div class="topnav-padding">
             <div class="nav-left">  
                 <a class="topnav-logo" href="index.html">ChainBreaker</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="icon" src="img/menu-bright.svg"></a></div>    
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <img class="icon" src="img/menu-bright.svg"></a>
+            </div>    
             <div class="nav-right">
-                <!--<a class="nav-element" href="#section-1">Warum&nbsp;tvshows?</a>
-                <a class="nav-element" href="#section-2">Vorteile</a>
-                <a class="nav-element" href="#section-3">Screenshots</a>-->
+                 <a class="nav-element" href="#section-1">Herausforderung</a>
+                <a class="nav-element" href="#section-2">Unser Ansatz</a>
                 <a class="nav-element">
-                <button href="#" class="button button-nav button-red" id="button2">Herunterladen</button>
+                <!--Beim Button unten Class="button" ergänzen um Modal Wrapper zu aktivieren-->
+                <button href="#" class="button-nav button-red" id="button2">Coming soon</button>
                 </a>
                 <div class="nav-element language-switch"> 
                 <a class="language-style" href="#Deutsch">DE</a>
@@ -55,23 +56,18 @@
             <div class="row-header">
                         <!--Headline-->
                         <div class="headline-wrapper phone-space">
-                            <h1>Breche die Infektionskette.</h1>
-                            <p>So funktioniert Chainbreaker asdfasdfasdfkjasldkfjio</p>
-                            <a href="https://www.youtube.com/watch?v=G-Nt7vGobeU">Mehr Infos hier.</a>
+                            <h1>Hilf’ mit, Infektionsketten <br>zuverfolgen und zu brechen.<br>mit ChainBreaker.</h1>
+                            <p>Transparenz und Wissen über Infektionsketten ohne<br> Eingriff in deine Privatsphäre.</p>
                         </div>
-
                         <!--Bild-->
                         <div class="header-image-wrapper">
-                                <video class="header-image" src="img/prototypvideo.mov" controls>
-  Ihr Browser kann dieses Video nicht wiedergeben.<br/>
-  Dieser Film zeigt eine Demonstration des video-Elements. 
-  Sie können ihn unter <a href="#">Link-Addresse</a> abrufen.
-</video>
+                        <video type="video/mp4" autoplay muted class="header-video" src="img/prototypvideo.mov" controls></video>
                         </div>
+                        
 
-                    <!--starte jetzt-->
+                        <!--starte jetzt-->
                         <div class="CTA-wrapper">
-                            <button href="#" class="button button-red" id="button">Starte jetzt</button>
+                            <a href="https://www.youtube.com/watch?v=G-Nt7vGobeU" class="button-infos button-red">Mehr Infos hier</a>
                         </div>
                    </div>
     </div>
@@ -88,31 +84,74 @@
           
             <div class="modal-text">
                 <!--Text-->
-                <h1 class="color-bright object-space">Danke für dein Interesse.</h1>
+                <h1 class="color-bright object-space">Danke, dass du hilfst dich und deine Mitmenschen zu schützen.</h1>
                 <h2 class="color-bright">Wähle deinen Store!</h2>
 
                 <!--download-button-->
                 <div class="CTA-wrapper">          
-                    <a style="padding-right: 5%" href="https://apps.apple.com/de/app/tvshows/id1114573962"><img class="download-button" src="img/download_app_store_badge_DE.svg">
+                    <a style="padding-right: 5%" href="#"><img class="download-button" src="img/download_app_store_badge_DE.svg">
                     </a>
-                    <a href="https://play.google.com/store/apps/details?id=de.swenden.tvshows"><img class="download-button" src="img/download_google-play-store-badge_DE.svg">
+                    <a href="#"><img class="download-button" src="img/download_google-play-store-badge_DE.svg">
                     </a>
                 </div>    
             </div>
       </div>
     
     </div>
-
     
+    <!--script modal download pop-up-->
+
+    <script> 
+            document.querySelectorAll('.button').forEach(button => button.addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "flex";
+                document.body.style.overflow = 'hidden';
+        })); 
+        
+        document.getElementById("close").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        }); 
+        
+        document.querySelector(".dark-background").addEventListener("click", 
+            function() {
+                document.querySelector(".modal-wrapper").style.display = "none";
+                document.body.style.overflow = '';
+        });      
+    </script>  
+
     <!--section 1 -->
 
-    <div class="container-fluid section-yellow">
+    <div class="container-fluid section-red">
         <span class="anchor" id="section-1"></span>
         <div class="row-padding">
             <div class="flex-textblock row">
                 <div class="small-textblock">
-                    <h1 class="text-space">Wie funktioniert ChainBreaker?</h1>
-                    <p class="object-space">Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum</p>
+                    <h1 class="text-space">Problem und Herausforderung</h1>
+                    <p class="object-space">Eines der zentralen Probleme der Corona-Krise ist, dass durch die lange Inkubationszeit infizierte Bürger den Virus unbemerkt an viele Menschen verbreiten können, bevor erste Symptome auftreten oder ein Test gemacht werden kann. Ist ein Test positiv ausgefallen ist es außerdem schwierig und ein unglaublicher Arbeitsaufwand alle Kontaktpersonen über einen bis zu zwei Wochen langen Zeitraum rückwirkend zu ermitteln und zu kontaktieren.<br><br>
+
+                    In Singapur, Südkorea und anderen ebenfalls betroffenen Regionen gibt es bereits Ansätze, die mit Bewegungsdaten von Smartphones versuchen die Infektionsketten darzustellen, jedoch oft verbunden mit einem nicht unerheblichen Eingriff in die Privatsphäre der Nutzer.<br><br>
+
+                    Wir finden Transparenz und Wissen über die Infektionsketten sollten nicht auf Kosten der Persönlichkeitsrechte gehen.</p>
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    <!--section 2-->
+
+    <div class="container-fluid section-yellow">
+        <span class="anchor" id="section-2"></span>
+        <div class="row-padding">
+            <div class="flex-textblock row">
+                <div class="small-textblock">
+                    <h1 class="text-space">Konkreter Ansatz</h1>
+                    <p class="object-space">Durch die Bluetooth-Beacon-Technologie werden Kontaktpersonen im unmittelbaren Umfeld kontinuierlich, lokal und einzigartig zuordenbar durch eine pseudonymisierte ID auf dem Smartphone gespeichert. Später kann man sofort nachvollziehen, mit wie vielen Menschen man seine ID ausgetauscht hat und auf einer Karte den Bereich eingrenzen.Wenn eine dieser Kontaktpersonen später Symptome zeigt oder positiv getestet wurde kann sie das jeweils pseudonymisiert in der App melden.<br><br>
+
+                    Daraufhin gleicht das Smartphone eines jeden Benutzers die Meldung mit seinen gespeicherten Kontaktpersonen in der Vergangenheit ab und passt die persönliche Risikoeinschätzung entsprechend an. Sollte eine Kontaktperson positiv getestet werden, wird eine Empfehlung ausgesprochen zu Hause zu bleiben und sich bei auftretenden Symptonen bei den zuständigen Stellen zu melden und über die App seine Mitmenschen zu informieren.<br><br>
+
+                    All das geschieht in kompletter Transparenz und bei gleichzeitiger Anonymität der Nutzer, um die Infektionsketten für jeden Nutzer nachvollziehbar zu machen und durch das umsichtige Verhalten der Bürger schlussendlich auch zu brechen, ohne in die Privatsphäre einzugreifen oder zentralisiert Lokalisierungsdaten vieler Nutzer zu sammeln.</p>
                 </div>
             </div>    
         </div>
@@ -123,11 +162,7 @@
     <footer>   
         <div class="footer-wrapper">
             <div class="law-wrapper">
-                <a class="footer-element" href="#">© 2020 Lukas Rambold, Daniela Vogel</a>
-            </div>
-            <div class="law-wrapper">  
-                <a class="footer-element" href="/imprint.html">Impressum</a>
-                <a class="footer-element" href="/dataprivacy.html">Datenschutz</a>
+                <a class="footer-element" href="https://devpost.com/software/chainbreaker">© 2020 ChainBreaker Team</a>
             </div>
         </div>
     </footer>
